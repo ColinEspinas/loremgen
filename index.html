@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LoremGen</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script type="text/javascript" src="js/background.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li id="brand-item" class="menu-item"><a draggable="false" href="#">LoremGen</a></li>
+                <li id="words-btn" class="menu-item active"><a draggable="false" href="#">Words</a></li>
+                <li id="para-btn" class="menu-item"><a draggable="false" href="#">Paragraphs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="settings-form" action="">
+            <div class="setting-container">
+                <span class="input-title">Length</span>
+                <input type="number" name="getLength" id="length-input" placeholder="Enter a positive value..."
+                    value="25" min="0" max="2500" autocomplete="none">
+                <div id="paraCount-container">
+                    <span class="input-title">Paragraphs count</span>
+                    <input type="number" name="getParaCount" id="paraCount-input" placeholder="Enter a positive value..."
+                        value="2" min="0" autocomplete="none">
+                </div>
+                <label class="checkbox-container">
+                    <span class="checkbox-text">Copy to clipboard when generated</span>
+                    <input id="copy-check" type="checkbox">
+                    <div class="checkmark-container">
+                        <span class="checkmark"></span>
+                    </div>
+                </label>
+            </div>
+        </form>
+        <textarea id="result-output" class="result-container" placeholder="Your text will appear here..." readonly></textarea>
+        <button id="copy-btn">Copy to clipboard</button>
+    </main>
+    <div class="footer-placeholder"></div>
+    <footer>
+        <button id="gen-btn" class="footer-btn">Generate !</button>
+    </footer>
+</body>
+
+</html>
