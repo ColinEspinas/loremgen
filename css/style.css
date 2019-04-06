@@ -197,6 +197,10 @@ button:hover {
     background-color: #6900ff;
 }
 
+#copy-btn {
+    margin-bottom: 10px;
+}
+
 .footer-placeholder {
     height: 51px;
 }
